@@ -44,7 +44,7 @@ function create_regular_row_random() {
   // number (1) + fname (26) + space (1) + lname (26) + space (26) + address (26) + space (26) + city (18) + state (2) + zip (5) + ext (4) + space (7) +
   // number (10) + number (16) + number (4) + number (4) + date (10) + language (2) + number + space (5 + 1 = 6) + letter (1) + letter (1) + space (1) + 
   // space (1) + space (10) + space (10) + space (4) + number + space (10 + 1 = 11) + space (3) + space (1) + space (1) + number (2) + date (10) + 
-  // date (10) + date (10) + letter (1) + letter (1) + date (10) + space (20) + space (10) + space (1) * 4 + space (15) + number (16) + date (10) + 
+  // date (10) + date (10) + letter (1) + letter (1) + date (10) + space (20) + space (10) + space (1) * 4 + space (15) + number (16) **PK** + date (10) + 
   // email (50) + number (13) + letter (1) + random string (60)
   let entry = null;
   let row_str = null;
@@ -122,7 +122,7 @@ function create_regular_row_random() {
   row_str += entry; // space (1) : 342/507
   entry = fill_up_to_nth_char("", 15);
   row_str += entry; // space (15) : 357/507
-  row_str += generate(16); // number (16) : 373/507
+  row_str += generate(16); // number (16) : 373/507  // ********* This is the primary key of the data *********
   row_str += getFormattedDate(faker.date.past()) // date (10) : 383/507
   assert(row_str.length == 383);
   entry = faker.internet.email();
