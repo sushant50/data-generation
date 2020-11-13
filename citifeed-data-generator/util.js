@@ -1,4 +1,6 @@
 var fs = require('fs');
+const faker = require('faker')
+const RandExp = require('randexp');
 
 /**
  * Generates a pseudo random number of length n
@@ -36,14 +38,10 @@ exports.getFormattedDate = function (date) {
  * @returns {void} 
  */
 exports.generateCSV = function(fakeData) {
-    const csv = fakeData.map(row => row.map(item => (typeof item === 'string' && item.indexOf(',') >= 0) ? `"${item}"`: String(item)).join(',')).join('\n');
-    fs.writeFile('data.csv', csv, 'utf8', function (err) {
-        if (err) {
-            console.log('Some error occured - file either not saved or corrupted file saved.');
-        } else {
-            console.log('It\'s saved!');
-        }
-    });
+    let file = fs.createWriteStream('data.csv');
+    file.on('error', function(err) { /* error handling */ });
+    fakeData.forEach(function(v) { file.write(v + '\n'); });
+    file.end();
 }
 
 /**
@@ -56,9 +54,14 @@ exports.generateCSV = function(fakeData) {
 exports.generateFakeData = function(iterations, rowFormats) {
     let fakeData = []
     for(var i=0; i < iterations; i++){
-        let index = Math.floor(Math.random() * 18) + 1  
-        const data = rowFormats[index]()
-        fakeData.push(data)
+        let dataString = ''
+        for(let j in rowFormats) {
+            switch(rowFormats[j].type) {
+                case "STRING": 
+                dataString = dataString + ',' + module.exports.generate(4)
+            }
+        }
+        fakeData.push(dataString)
     }
     return fakeData;
 }
