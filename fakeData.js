@@ -19,7 +19,6 @@ process.argv.forEach(function (val, index, array) {
     iterations = val;
   }
   else if(index == 2) {
-    console.log(val)
     /**
      * require the js file containing the schema
      * @type {Object}

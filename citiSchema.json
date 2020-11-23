@@ -2,7 +2,8 @@
     {
         "mode": "NULLABLE",
         "name": "PRODUCTTYPE",
-        "type": "STRING"
+        "type": "default",
+        "subType": "randProduct"
     },
     {
         "mode": "NULLABLE",
@@ -239,7 +240,8 @@
 {
   "mode": "NULLABLE",
   "name": "CARD_EXPIRATION_DATE",
-  "type": "date"
+  "type": "date",
+  "subType": "MM/DD/YYYY"
 },
 {
   "mode": "NULLABLE",
@@ -255,7 +257,7 @@
 {
   "mode": "NULLABLE",
   "name": "CORE_FIELD_INDICATOR",
-  "type": "array",
+  "type": "randchoice",
   "subType": ["Y", "B"]
 },
 {

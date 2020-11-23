@@ -5,6 +5,7 @@
   "main": "fakeData.js",
   "dependencies": {
     "faker": "^4.1.0",
+    "moment": "^2.29.1",
     "randexp": "^0.5.3",
     "regex-parser": "^2.2.11"
   },
