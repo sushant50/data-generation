@@ -3,7 +3,7 @@
         "mode": "NULLABLE",
         "name": "PRODUCTTYPE",
         "type": "default",
-        "subType": "randProduct"
+        "defaultVal": "product"
     },
     {
         "mode": "NULLABLE",
@@ -140,7 +140,7 @@
     {
     "mode": "NULLABLE",
     "name": "YEAR_BIRTH",
-    "type": "STRING"
+    "type": "date"
     },
     {
     "mode": "NULLABLE",
@@ -235,7 +235,8 @@
 {
   "mode": "NULLABLE",
   "name": "CITIMATCH_ID", 
-  "type": "STRING"
+  "type": "random",
+  "subType": "uuid"
 },
 {
   "mode": "NULLABLE",
