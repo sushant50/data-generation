@@ -1,6 +1,18 @@
 var fs = require('fs');
 const faker = require('faker')
 const RandExp = require('randexp');
+const parseRegex = require("regex-parser")
+
+function regexFromString (string) {
+    var match = /^\/(.*)\/([a-z]*)$/.exec(string)
+    return new RegExp(match[1], match[2])
+  }
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 /**
  * Generates a pseudo random number of length n
@@ -8,7 +20,7 @@ const RandExp = require('randexp');
  * @param {number} n The required length of the random number
  * @returns {number}
  */
-exports.generate = function (n) {
+generate = function (n) {
     var add = 1, max = 12 - add; 
     if ( n > max ) {
         return this.generate(max) + this.generate(n - max);
@@ -25,7 +37,7 @@ exports.generate = function (n) {
  * @param {Date} date The Javascript Date
  * @returns {Date} The Date in mm/dd/yyyy format
  */
-exports.getFormattedDate = function (date) {
+getFormattedDate = function (date) {
     let year = date.getFullYear();
     let month = (1 + date.getMonth()).toString().padStart(2, '0');
     let day = date.getDate().toString().padStart(2, '0');
@@ -53,15 +65,31 @@ exports.generateCSV = function(fakeData) {
  */
 exports.generateFakeData = function(iterations, rowFormats) {
     let fakeData = []
+    let file = fs.createWriteStream('data.csv');
     for(var i=0; i < iterations; i++){
         let dataString = ''
         for(let j in rowFormats) {
             switch(rowFormats[j].type) {
                 case "STRING": 
-                dataString = dataString + ',' + module.exports.generate(4)
+                dataString = dataString + ',' + generate(4)
+                break;
+                case "regex":
+                dataString = dataString + ',' + new RandExp(parseRegex(rowFormats[j].subType)).gen()
+                break;
+                case "array":
+                let index = getRandomInt(0, rowFormats[j].subType.length-1)
+                dataString = dataString + ',' + rowFormats[j].subType[index]
+                break;
+                case "date":
+                dataString = dataString + ',' + getFormattedDate(faker.date.past())
+                break;
+                default:
+                let type = rowFormats[j].type
+                let subType = rowFormats[j].subType                
+                dataString = dataString + ',' + eval(`faker.${type}.${subType}()`)
             }
         }
-        fakeData.push(dataString)
+        file.write(dataString + '\n');
     }
-    return fakeData;
+    file.end();
 }

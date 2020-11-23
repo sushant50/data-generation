@@ -5,9 +5,9 @@
   "main": "fakeData.js",
   "dependencies": {
     "faker": "^4.1.0",
-    "randexp": "^0.5.3"
+    "randexp": "^0.5.3",
+    "regex-parser": "^2.2.11"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

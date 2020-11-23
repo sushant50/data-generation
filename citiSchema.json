@@ -1,8 +1,8 @@
-exports.schema = [
+[
     {
         "mode": "NULLABLE",
         "name": "PRODUCTTYPE",
-        "default": "1",
+        "type": "STRING"
     },
     {
         "mode": "NULLABLE",
@@ -94,7 +94,7 @@ exports.schema = [
     {
     "mode": "NULLABLE",
     "name": "ACCTOPENDATE",
-    "type": "STRING"
+    "type": "date"
     },
     {
     "mode": "NULLABLE",
@@ -169,17 +169,17 @@ exports.schema = [
   {
     "mode": "NULLABLE",
     "name": "FIRST_TXN_DT",
-    "type": "STRING"
+    "type": "date"
   },
   {
     "mode": "NULLABLE",
     "name": "LAST_STMNT_DT",
-    "type": "STRING"
+    "type": "date"
   },
   {
     "mode": "NULLABLE",
     "name": "LAST_TRXN_DT",
-    "type": "STRING"
+    "type": "date"
   },
   {
     "mode": "NULLABLE",
@@ -194,7 +194,7 @@ exports.schema = [
   {
     "mode": "NULLABLE",
     "name": "ACCTCLOSEDATE",
-    "type": "STRING"
+    "type": "date"
   },
   {
     "mode": "NULLABLE",
@@ -233,25 +233,24 @@ exports.schema = [
 },
 {
   "mode": "NULLABLE",
-  "name": "CITIMATCH_ID",
+  "name": "CITIMATCH_ID", 
   "type": "STRING"
 },
 {
   "mode": "NULLABLE",
   "name": "CARD_EXPIRATION_DATE",
-  "type": "STRING"
+  "type": "date"
 },
 {
   "mode": "NULLABLE",
   "name": "EADDR_TXT",
-  "type": "STRING",
   "type": "internet",
   "subType": "email"
 },
 {
   "mode": "NULLABLE",
   "name": "CURR_ACCT_BAL_AMT",
-  "type": "random"
+  "type": "STRING"
 },
 {
   "mode": "NULLABLE",
@@ -263,6 +262,6 @@ exports.schema = [
   "mode": "NULLABLE",
   "name": "HASH_ACCT_NBR",
   "type": "regex",
-  "subType": "/\d{1,4}\.\d{2}NMTMxMDAwNjkwMA[a-zA-Z0-9\/+]{44}==/"
+  "subType": "/\\d{1,4}\\.\\d{2}NMTMxMDAwNjkwMA[a-zA-Z0-9\\/+]{44}==/"
 }
 ]

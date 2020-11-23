@@ -28,10 +28,5 @@ process.argv.forEach(function (val, index, array) {
   }
 });
 
-let rowFormats = schema.schema;
-fakeData = util.generateFakeData(iterations, rowFormats);
-util.generateCSV(fakeData);
-
-
-
-
+let rowFormats = schema;
+util.generateFakeData(iterations, rowFormats);
