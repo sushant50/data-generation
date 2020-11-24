@@ -42,7 +42,7 @@ rl.question("Do you also want to insert these rows in bigquery? (choices: y/n)  
     rl.close()
   }
   else {
-    rl.question("Provide dataset and table names separated by a comma:  ", function(tableParams) {
+    rl.question("Provide dataset and table names separated by a comma. Please ensure that the table already exists:  ", function(tableParams) {
       let dataset = tableParams.split(',')[0].trim()
       let table = tableParams.split(',')[1].trim()
       util.insertData(dataset, table, rl)

@@ -266,5 +266,23 @@
 "name": "HASH_ACCT_NBR",
 "type": "regex",
 "subType": "/\\d{1,4}\\.\\d{2}NMTMxMDAwNjkwMA[a-zA-Z0-9\\/+]{44}==/"
+},
+{
+  "mode": "NULLABLE",
+  "name": "dates",
+  "type": "date"
+},
+{
+  "mode": "NULLABLE",
+  "name": "booleans",
+  "type": "random",
+  "subType": "boolean"
+},
+{
+  "mode": "NULLABLE",
+  "name": "numbers",
+  "type": "numbers"
 }
+
+
 ]
