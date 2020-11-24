@@ -4,6 +4,7 @@
   "description": "A utility to generate fake data.",
   "main": "fakeData.js",
   "dependencies": {
+    "@google-cloud/bigquery": "^5.5.0",
     "faker": "^4.1.0",
     "moment": "^2.29.1",
     "randexp": "^0.5.3",

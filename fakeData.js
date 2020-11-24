@@ -45,8 +45,7 @@ rl.question("Do you also want to insert these rows in bigquery? (choices: y/n)  
     rl.question("Provide dataset and table names separated by a comma:  ", function(tableParams) {
       let dataset = tableParams.split(',')[0].trim()
       let table = tableParams.split(',')[1].trim()
-      util.insertData(tableParams.split(',')[0])
-      rl.close();
+      util.insertData(dataset, table, rl)
     });
   }
 
