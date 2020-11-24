@@ -1,0 +1,214 @@
+[
+    {
+      "name": "PRODUCTTYPE", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "FSTNAME", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "MIDINIT", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "LSTNAME", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "BUSINESSNAME", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "ADDRESS1", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "ADDRESS2", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "CITY", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "STATE", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "ZIPCODE", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "ZIPFOUR", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "POSTALCODE", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "PHONE", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "CARDHLDR_ACCT_XREF_NBR", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "SYSTEM", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "PRIN", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "ACCTOPENDATE", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "LANGUAGE_INDICATOR", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "STORE_ORIGIN", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "NEVER_ACTIVE", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "FIRSTTIME_PURCHASER", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "DEFER_6MONTH", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "DEFER_OTHER", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "EXPDT_DEFER_6MONTH", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "EXPDT_DEFER_OTHER", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "YEAR_BIRTH", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "CREDIT_LIMIT", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "APP_SOURCE", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "OPT_DIRCT_MAIL", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "OPT_PHONE", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "STMNT_CYCLE_CD", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "FIRST_TXN_DT", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "LAST_STMNT_DT", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "LAST_TRXN_DT", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "PAY_STATUS", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "ACCTSTATUS", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "ACCTCLOSEDATE", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "CONTACT_TITLE", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "FAX_NUM", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "CHILD_PAR_IND", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "PROX_ACCT_TYP", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "CAN_LOYAL_IND", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "CAN_PRICING_CUST", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "COMPANY_CODE", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "CITIMATCH_ID", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "CARD_EXPIRATION_DATE", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "EADDR_TXT", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "CURR_ACCT_BAL_AMT", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "CORE_FIELD_INDICATOR", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "HASH_ACCT_NBR", 
+      "type": "STRING"
+    }, 
+    {
+      "name": "dates", 
+      "type": "DATE"
+    }, 
+    {
+      "name": "booleans", 
+      "type": "BOOLEAN"
+    }, 
+    {
+      "name": "numbers", 
+      "type": "INTEGER"
+    }
+  ]
