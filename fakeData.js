@@ -13,7 +13,7 @@ const rl = readline.createInterface({
  * Number of iterations to run.
  * @type {number}
  */
-var iterations; 
+let iterations; 
 
 process.argv.forEach(function (val, index, array) {
   if(index == 3) {
@@ -27,8 +27,10 @@ process.argv.forEach(function (val, index, array) {
     // schema = require(`./${val}`)
     schemaString = val
   }
+  else {
+
+  }
 });
-console.log(schemaString,  "here")
 
 for (const elem of schemaString.split(",")) {
   processes.push(exec(`node lib/generateFakeData.js ${elem.trim()} ${iterations}`))
@@ -40,10 +42,9 @@ Promise.all(processes).then((values) => {
       rl.close()
     }
     else {
-      rl.question("Provide dataset and table names separated by a comma. Please ensure that the table already exists:  ", function(tableParams) {
-        let dataset = tableParams.split(',')[0].trim()
-        let table = tableParams.split(',')[1].trim()
-        util.insertData(dataset, table, rl)
+
+      rl.question("Provide the relationship json:  ", function(relationJson) {
+       util.createTempTables(values,relationJson, rl)
       });
     }
   

@@ -1,6 +1,8 @@
 [
     {
         "parent": "citi_feed_flat",
+        "parentDataset": "sushant",
+        "childDataset": "sushant",
         "child" : "personal_table",
         "relation": {
             "PRODUCTTYPE": "PRODUCTTYPE",
