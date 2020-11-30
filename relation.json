@@ -8,8 +8,7 @@
             "PRODUCTTYPE": "PRODUCTTYPE",
             "FSTNAME": "FSTNAME",
             "MIDINIT" : "MIDINIT",
-            "LSTNAME": "LSTNAME",
-            "BUSINESSNAME": "BUSINESSNAME"
+            "LSTNAME": "LSTNAME"
         },
         "ratio" : 0.5
 

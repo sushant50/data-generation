@@ -44,7 +44,7 @@ Promise.all(processes).then((values) => {
     else {
 
       rl.question("Provide the relationship json:  ", function(relationJson) {
-       util.createTempTables(values,relationJson, rl)
+       util.createTempTables(values,relationJson, iterations, rl)
       });
     }
   
