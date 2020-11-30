@@ -11,10 +11,12 @@ NodeJS v15.0.1
 2. Run `npm install`
 3. There are two exampleSchemas provided in the repository
 *One of the schema is a data generation tool specific schema and the other is a schema needed to create the bigquery table.*
-4. Run the tool by `node fakeData.js exampleSchema.json 1000`
+4. Run the tool by `node fakeData.js exampleDataGenSchema.json 1000`
 *Here 1000 stands for the number of rows you want to create*
+![Screen-Shot-2020-11-24-at-12-19-15-PM.png](https://media.github.homedepot.com/user/10766/files/0751e100-2e50-11eb-8e8f-0129c7f3dac6)
 5. The tool will then show a prompt saying, *Do you also want to insert these rows in bigquery? (choices: y/n)*
 6. If you choose 'y', the tool will then again prompt you to provide a dataset and table name separated by a comma.
+![Screen-Shot-2020-11-24-at-12-21-43-PM.png](https://media.github.homedepot.com/user/10766/files/03be5a00-2e50-11eb-9ad8-04e2a4eac032)
 7. The tool will then insert all the generated rows into the BQ table.
 
 # Creating the data generation tool specific schema
