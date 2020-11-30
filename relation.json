@@ -1,0 +1,15 @@
+[
+    {
+        "parent": "citi_feed_flat",
+        "child" : "personal_table",
+        "relation": {
+            "PRODUCTTYPE": "PRODUCTTYPE",
+            "FSTNAME": "FSTNAME",
+            "MIDINIT" : "MIDINIT",
+            "LSTNAME": "LSTNAME",
+            "BUSINESSNAME": "BUSINESSNAME"
+        },
+        "ratio" : 0.5
+
+    }
+]
