@@ -43,8 +43,16 @@ Promise.all(processes).then((values) => {
     }
     else {
 
-      rl.question("Provide the relationship json:  ", function(relationJson) {
-       util.writeToBQ(values,relationJson, iterations, rl)
+      rl.question("Provide the relationship json:  ", function(JsonFile) {
+          const relationJson = require(`./${JsonFile}`)
+          if(util.checkRelations(relationJson, values)) {
+            util.writeToBQ(values,relationJson, iterations, rl)
+          }
+          else {
+            rl.close()
+          }
+          
+        
       });
     }
   

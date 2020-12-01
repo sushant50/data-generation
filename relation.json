@@ -12,5 +12,9 @@
         },
         "ratio" : 0.2
 
+    },
+    {
+        "parent": "personal_table2",
+        "parentDataset": "sushant"
     }
 ]
