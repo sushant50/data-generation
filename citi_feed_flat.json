@@ -1,9 +1,8 @@
 [
   {
-      "mode": "NULLABLE",
       "name": "PRODUCTTYPE",
       "type": "constant",
-      "defaultVal": "product"
+      "defaultVal": "sushant"
   },
   {
       "mode": "NULLABLE",
