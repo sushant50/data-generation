@@ -1,20 +1,8 @@
 [
     {
-        "parent": "citi_feed_flat",
+        "parent": "stg_cust_clnd_prcss",
         "parentDataset": "sushant",
-        "childDataset": "sushant",
-        "child" : "personal_table",
-        "relation": {
-            "PRODUCTTYPE": "PRODUCTTYPE",
-            "FSTNAME": "FSTNAME",
-            "MIDINIT" : "MIDINIT",
-            "LSTNAME": "LSTNAME"
-        },
-        "ratio" : 0.2
+        "ratio" : 1
 
-    },
-    {
-        "parent": "personal_table2",
-        "parentDataset": "sushant"
     }
 ]

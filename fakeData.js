@@ -13,10 +13,13 @@ const rl = readline.createInterface({
  * Number of iterations to run.
  * @type {number}
  */
-let iterations; 
+let iterations, format; 
 
 process.argv.forEach(function (val, index, array) {
-  if(index == 3) {
+  if(index == 4 ) {
+    format = val
+  }
+  else if(index == 3) {
     iterations = val;
   }
   else if(index == 2) {
@@ -33,7 +36,7 @@ process.argv.forEach(function (val, index, array) {
 });
 
 for (const elem of schemaString.split(",")) {
-  processes.push(exec(`node lib/generateFakeData.js ${elem.trim()} ${iterations}`))
+  processes.push(exec(`node lib/generateFakeData.js ${elem.trim()} ${iterations} ${format}`))
 }
 
 Promise.all(processes).then((values) => {

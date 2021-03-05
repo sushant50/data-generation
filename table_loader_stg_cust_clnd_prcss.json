@@ -1,0 +1,177 @@
+[
+  {
+    "name": "unique_record_id",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "source",
+    "type": "RECORD",
+    "mode": "NULLABLE",
+    "fields": [
+      {
+        "name": "source_name",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "source_customer_id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      }
+    ]
+  },
+  {
+    "name": "profile",
+    "type": "RECORD",
+    "mode": "NULLABLE",
+    "fields": [
+      {
+        "name": "type",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "first_name",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "mid_name",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "last_name",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "suffix_name",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "title_name",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "business_name",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      }
+    ]
+  },
+  {
+    "name": "address",
+    "type": "RECORD",
+    "mode": "NULLABLE",
+    "fields": [
+      {
+        "name": "address_line_1",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "address_line_2",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "address_line_3",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "city",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "state",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "country",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "zip",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "zip4",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      }
+    ]
+  },
+  {
+    "name": "emails",
+    "type": "STRING",
+    "mode": "REPEATED"
+  },
+  {
+    "name": "skip_emails",
+    "type": "STRING",
+    "mode": "REPEATED"
+  },
+  {
+    "name": "phone",
+    "type": "RECORD",
+    "mode": "REPEATED",
+    "fields": [
+      {
+        "name": "number",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "type",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      }
+    ]
+  },
+  {
+    "name": "skip_phone",
+    "type": "RECORD",
+    "mode": "NULLABLE",
+    "fields": [
+      {
+        "name": "number",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "type",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      }
+    ]
+  },
+  {
+    "name": "input_source",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "grec_ids",
+    "type": "STRING",
+    "mode": "REPEATED"
+  },
+  {
+    "name": "ecr_prty_id",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "insert_ts",
+    "type": "TIMESTAMP",
+    "mode": "NULLABLE"
+  }
+]

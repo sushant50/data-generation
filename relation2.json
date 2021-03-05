@@ -1,0 +1,46 @@
+[
+    {
+        "parent": "amperity_response_customer_profile",
+        "parentDataset": "sushant",
+        "childDataset": "sushant",
+        "child" : "amperity_response_emails",
+        "relation": {
+            "AMP_ID": "AMP_ID"
+        },
+        "ratio" : 1
+
+    },
+    {
+        "parent": "amperity_response_customer_profile",
+        "parentDataset": "sushant",
+        "childDataset": "sushant",
+        "child" : "amperity_response_phones",
+        "relation": {
+            "AMP_ID": "AMP_ID"
+        },
+        "ratio" : 1
+
+    },
+    {
+        "parent": "amperity_response_customer_profile",
+        "parentDataset": "sushant",
+        "childDataset": "sushant",
+        "child" : "amperity_response_addresses",
+        "relation": {
+            "AMP_ID": "AMP_ID"
+        },
+        "ratio" : 1
+
+    },
+    {
+        "parent": "amperity_response_customer_profile",
+        "parentDataset": "sushant",
+        "childDataset": "sushant",
+        "child" : "amperity_response_source_mapping",
+        "relation": {
+            "AMP_ID": "AMP_ID"
+        },
+        "ratio" : 1
+
+    }
+]

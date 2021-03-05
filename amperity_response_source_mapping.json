@@ -1,0 +1,37 @@
+  [
+    {
+      "name": "AMP_ID",
+      "type":"random",
+      "subType":"uuid"
+    },
+    {
+      "name": "AMP_HH_ID",
+      "type":"random",
+      "subType":"uuid"
+    },
+    {
+      "name": "NSR_EKEY",
+      "type":"random",
+      "subType":"uuid"
+    },
+    {
+      "name": "NSR_HH_ID",
+      "type":"random",
+      "subType":"uuid"
+    },
+    {
+      "name": "Source_ID",
+      "type":"random",
+      "subType":"uuid"
+    },
+    {
+      "name": "Source_Name",
+      "type" : "randchoice",
+      "choices": ["SVOC", "ACXIOM", "ONLINEGUEST", "CITI"]
+    },
+    {
+      "name": "UUID",
+      "type":"random",
+      "subType":"uuid"
+    }
+  ]

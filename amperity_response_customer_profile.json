@@ -1,0 +1,69 @@
+[
+    {
+      "name": "NSR_EKEY",
+      "type":"random",
+      "subType":"uuid"
+    },
+    {
+      "name": "NSR_HH_ID",
+      "type":"random",
+      "subType":"uuid"
+    },
+    {
+      "name": "AMP_ID",
+      "type":"random",
+      "subType":"uuid"
+    },
+    {
+      "name": "AMP_HH_ID",
+      "type":"random",
+      "subType":"uuid"
+    },
+    {
+      "name": "Profile_Type",
+      "type" : "randchoice",
+      "choices": ["PERSON", "ORGANIZATION", "EMAIL"]
+    },
+    {
+      "name": "First_Name",
+      "type":"name",
+      "subType":"firstName"
+    },
+    {
+      "name": "Last_Name",
+      "type": "name",
+      "subType":"lastName",
+      "mode":"NULLABLE"
+    },
+    {
+      "name": "Middle_Name",
+      "type":"name",
+      "subType":"firstName",
+      "mode":"NULLABLE"
+    },
+    {
+      "name": "Name_Source",
+      "type" : "randchoice",
+      "choices": ["SVOC", "ACXIOM", "ONLINEGUEST", "CITI"]
+    },
+    {
+      "name": "Neustar_Verified_First_Name",
+      "type":"name",
+      "subType":"firstName"
+    },
+    {
+      "name": "Neustar_Verified_Last_Name",
+      "type": "name",
+      "subType":"lastName"
+    },
+    {
+      "name": "Business",
+      "mode": "NULLABLE",
+      "type":"company",
+      "subType":"companyName"
+    },
+    {
+      "name": "Last_Upd_Ts",
+      "type": "TIMESTAMP"
+    }
+  ]
