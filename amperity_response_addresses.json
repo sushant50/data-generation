@@ -1,0 +1,70 @@
+[
+    {
+      "name": "AMP_ID",
+      "type":"random",
+      "subType":"uuid"
+    },
+    {
+      "name": "Addr_Line_1",
+      "type":"address",
+      "subType":"streetAddress"
+    },
+    {
+      "name": "Addr_Line_2",
+      "type":"address",
+      "subType":"streetAddress",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "Addr_Line_3",
+      "type":"address",
+      "subType":"streetAddress",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "City",
+      "type":"address",
+      "subType":"city",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "State",
+      "type":"address",
+      "subType":"stateAbbr",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "Country",
+      "type":"address",
+      "subType":"country",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "Pcode",
+      "type":"address",
+      "subType":"zipCode",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "Zip4",
+      "type":"address",
+      "subType":"zipCode",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "Neustar_Verified_Address",
+      "type" : "randchoice",
+      "choices": ["Y", "N"]
+    },
+    {
+      "name": "Priority",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "Address_Source",
+      "type" : "randchoice",
+      "choices": ["SVOC", "ACXIOM", "ONLINEGUEST", "CITI"]
+    }
+  ]
+  

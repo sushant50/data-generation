@@ -1,0 +1,245 @@
+[
+    {
+      "mode": "NULLABLE",
+      "name": "UUID",
+      "type": "STRING"
+    },
+    {
+      "fields": [
+        {
+          "mode": "NULLABLE",
+          "name": "NSR_EKEY",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "NSR_HH_ID",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "AMP_ID",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "AMP_HH_ID",
+          "type": "STRING"
+        }
+      ],
+      "mode": "NULLABLE",
+      "name": "ID",
+      "type": "RECORD"
+    },
+    {
+      "fields": [
+        {
+          "mode": "NULLABLE",
+          "name": "Source_Name",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "Source_ID",
+          "type": "STRING"
+        }
+      ],
+      "mode": "NULLABLE",
+      "name": "Source",
+      "type": "RECORD"
+    },
+    {
+      "fields": [
+        {
+          "mode": "NULLABLE",
+          "name": "Type",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "FName",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "MName",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "LName",
+          "type": "STRING"
+        },
+        {
+          "fields": [
+            {
+              "mode": "NULLABLE",
+              "name": "FName",
+              "type": "STRING"
+            },
+            {
+              "mode": "NULLABLE",
+              "name": "LName",
+              "type": "STRING"
+            }
+          ],
+          "mode": "NULLABLE",
+          "name": "Verified",
+          "type": "RECORD"
+        },
+        {
+          "fields": [
+            {
+              "mode": "NULLABLE",
+              "name": "FName",
+              "type": "STRING"
+            },
+            {
+              "mode": "NULLABLE",
+              "name": "MName",
+              "type": "STRING"
+            },
+            {
+              "mode": "NULLABLE",
+              "name": "LName",
+              "type": "STRING"
+            }
+          ],
+          "mode": "NULLABLE",
+          "name": "Append",
+          "type": "RECORD"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "Business",
+          "type": "STRING"
+        }
+      ],
+      "mode": "NULLABLE",
+      "name": "Profile",
+      "type": "RECORD"
+    },
+    {
+      "fields": [
+        {
+          "fields": [
+            {
+              "mode": "NULLABLE",
+              "name": "DPV",
+              "type": "STRING"
+            },
+            {
+              "mode": "NULLABLE",
+              "name": "DPV_Notes",
+              "type": "STRING"
+            },
+            {
+              "mode": "NULLABLE",
+              "name": "NXI",
+              "type": "STRING"
+            },
+            {
+              "mode": "NULLABLE",
+              "name": "Move_Type",
+              "type": "STRING"
+            },
+            {
+              "mode": "NULLABLE",
+              "name": "Move_Date",
+              "type": "STRING"
+            }
+          ],
+          "mode": "NULLABLE",
+          "name": "NCOA",
+          "type": "RECORD"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "Type",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "Addr_Line_1",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "Addr_Line_2",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "Addr_Line_3",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "City",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "State",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "Country",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "PCode",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "Zip4",
+          "type": "STRING"
+        }
+      ],
+      "mode": "REPEATED",
+      "name": "Address",
+      "type": "RECORD"
+    },
+    {
+      "fields": [
+        {
+          "mode": "NULLABLE",
+          "name": "Address",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "Verified",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "Primary",
+          "type": "STRING"
+        }
+      ],
+      "mode": "REPEATED",
+      "name": "Email",
+      "type": "RECORD"
+    },
+    {
+      "fields": [
+        {
+          "mode": "NULLABLE",
+          "name": "Type",
+          "type": "STRING"
+        },
+        {
+          "mode": "NULLABLE",
+          "name": "Number",
+          "type": "STRING"
+        }
+      ],
+      "mode": "REPEATED",
+      "name": "Phone",
+      "type": "RECORD"
+    }
+  ]

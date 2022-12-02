@@ -1,0 +1,27 @@
+[
+    {
+      "name": "AMP_ID",
+      "type":"random",
+      "subType":"uuid"
+    },
+    {
+      "name": "Email",
+      "type" : "internet",
+      "subType": "email"
+    },
+    {
+      "name": "Email_Source",
+      "type" : "randchoice",
+      "choices": ["SVOC", "ACXIOM", "ONLINEGUEST", "CITI"]
+    },
+    {
+      "name": "Neustar_Verified_Email",
+      "type" : "randchoice",
+      "choices": ["Y", "N"]
+    },
+    {
+      "mode": "NULLABLE",
+      "name": "Priority",
+      "type": "STRING"
+    }
+  ]

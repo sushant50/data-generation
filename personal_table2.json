@@ -1,0 +1,26 @@
+[
+    {
+        "mode": "NULLABLE",
+        "name": "FSTNAME",
+        "type": "name",
+        "subType": "firstName"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "MIDINIT",
+        "type": "name",
+        "subType": "firstName"    
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "LSTNAME",
+        "type": "name",
+        "subType": "lastName"   
+     },
+    {
+        "mode": "NULLABLE",
+        "name": "BUSINESSNAME",
+        "type": "company",
+        "subType": "companyName"  
+        }
+  ]

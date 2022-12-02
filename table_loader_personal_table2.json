@@ -1,0 +1,22 @@
+[
+    {
+        "mode": "NULLABLE",
+        "name": "FSTNAME",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "MIDINIT",
+        "type": "STRING"
+    },
+    {
+        "mode": "NULLABLE",
+        "name": "LSTNAME",
+        "type": "STRING"
+     },
+    {
+        "mode": "NULLABLE",
+        "name": "BUSINESSNAME",
+        "type": "STRING"
+        }
+  ]

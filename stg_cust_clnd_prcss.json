@@ -1,0 +1,198 @@
+[
+   {
+     "name": "unique_record_id",
+     "type":"random",
+     "subType":"uuid"
+   },
+   {
+     "name": "source",
+     "type":"repeatedRecords",
+     "repeatedValues": [
+       {
+         "name": "source_name",
+         "type" : "randchoice",
+         "choices": ["CUSTACCID", "ONLINEGUEST", "CITI", "HCUST", "LUCST"]
+       },
+       {
+         "name": "source_customer_id",
+         "type":"random",
+         "subType":"uuid"
+       }
+     ]
+   },
+   {
+     "name": "profile",
+     "type": "repeatedRecords",
+     "repeatedValues": [
+       {
+         "name": "type",
+         "type" : "randchoice",
+         "choices": ["PERSON", "ORGANIZATION", "EMAIL"]
+       },
+       {
+         "name": "first_name",
+         "type":"name",
+         "subType":"firstName"
+       },
+       {
+         "name": "mid_name",
+         "type":"name",
+         "subType":"firstName",
+         "mode":"NULLABLE"
+       },
+       {
+         "name": "last_name",
+         "type":"name",
+         "subType":"lastName",
+         "mode":"NULLABLE"
+       },
+       {
+         "name": "suffix_name",
+         "type": "STRING",
+         "mode": "NULLABLE"
+       },
+       {
+         "name": "title_name",
+         "type" : "randchoice",
+         "mode": "NULLABLE",
+         "choices": ["Mr", "Ms", "Mrs"]
+       },
+       {
+         "name": "business_name",
+         "type":"company",
+         "subType":"companyName",
+         "mode":"NULLABLE"
+
+       }
+     ]
+   },
+   {
+     "name": "address",
+     "type": "repeatedRecords",
+     "repeatedValues": [
+       {
+         "name": "address_line_1",
+         "type":"address",
+         "subType":"streetAddress"
+       },
+       {
+         "name": "address_line_2",
+         "type":"address",
+         "subType":"streetAddress",
+         "mode": "NULLABLE"
+       },
+       {
+         "name": "address_line_3",
+         "type":"address",
+         "subType":"streetAddress",
+         "mode": "NULLABLE"
+       },
+       {
+         "name": "city",
+         "type":"address",
+         "subType":"city",
+         "mode": "NULLABLE"
+       },
+       {
+         "name": "state",
+         "type":"address",
+         "subType":"stateAbbr",
+         "mode": "NULLABLE"
+       },
+       {
+         "name": "country",
+         "type":"address",
+         "subType":"country",
+         "mode": "NULLABLE"
+       },
+       {
+         "name": "zip",
+         "type":"address",
+         "subType":"zipCode",
+         "mode": "NULLABLE"
+       },
+       {
+         "name": "zip4",
+         "type":"address",
+         "subType":"zipCode",
+         "mode": "NULLABLE"
+       }
+     ]
+   },
+   {
+     "name": "emails",
+     "type":"repeatedString",
+     "details": {
+       "numberOfrepeatedRecords":4,
+       "type" : "internet",
+       "subType": "email",
+       "mode":"NULLABLE"
+   }
+   },
+   {
+     "name": "skip_emails",
+     "type":"repeatedString",
+     "details": {
+      "numberOfrepeatedRecords":1,
+       "type" : "internet",
+       "subType": "email",
+       "mode":"NULLABLE"
+      
+   }},
+   {
+     "name": "phone",
+     "type": "repeatedRecords",
+     "repeatedValues": [
+       {
+         "name": "number",
+         "type" : "phone",
+         "subType": "phoneNumber"
+       },
+       {
+         "name": "type",
+         "type" : "randchoice",
+         "choices": ["CELL", "FAX", "HOME"]
+       }
+     ]
+   },
+   {
+     "name": "skip_phone",
+     "type": "repeatedRecords",
+     "repeatedValues": [
+       {
+         "name": "number",
+         "type" : "phone",
+         "subType": "phoneNumber"
+       },
+       {
+         "name": "type",
+         "type" : "randchoice",
+         "choices": ["CELL", "FAX", "HOME"]
+       }
+     ]
+   },
+   {
+     "name": "input_source",
+     "type" : "randchoice",
+     "choices": ["SVOC", "ACXIOM", "ONLINEGUEST", "CITI"]
+   },
+   {
+     "name": "grec_ids",
+     "type":"repeatedString",
+     "details": {
+      "numberOfrepeatedRecords":1,
+      "type": "random",
+      "subType": "uuid"
+      
+   }
+   },
+   {
+     "name": "ecr_prty_id",
+     "type":"random",
+     "subType":"uuid"
+   },
+   {
+     "name": "insert_ts",
+     "type": "TIMESTAMP"
+   }
+ ]
